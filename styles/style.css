@@ -77,7 +77,6 @@ ol {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  overflow-y: auto;
 }
 
 .content__details {
@@ -99,6 +98,7 @@ ol {
   height: 386px;
   margin-bottom: 20px;
   overflow: hidden;
+  position: relative;
 }
 
 .result__video {
@@ -250,12 +250,12 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__textfield:focus,
-.search-form__textfield:focus-visible {
+.search-form__checkbox:focus,
+.search-form__checkbox:focus-visible {
   outline: none;
 }
 
-.search-form__label:has(:focus-visible) {
+.search-form__label:has(.search-form__checkbox:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
@@ -346,8 +346,4 @@ ol {
 
 .content__list-item {
   padding: 0 3px 0 3px;
-}
-
-.result__video-container {
-  position: relative;
 }
